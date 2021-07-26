@@ -1,0 +1,76 @@
+{%load static%}
+
+<html lang="en"> 
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Shubham Pawar</title>
+            
+            
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+                crossorigin="anonymous">
+
+        </head>
+        <link href = "{% static 'css/main.css' %}" rel ="stylesheet" type = "text/css" >
+
+
+        <body>
+            <br>
+            <div class='container  pt-3'>
+                <div class='row'>
+                    <div class='col-md-3' >
+                        <div class='card card-body' id='profile-wrapper'>
+                            <img id='profile_pic' src= "{% static 'images/pic2.jpg' %}" alt="hi" height="150px"  > 
+                            <hr>
+                            <center><b>Hii.. Shubham here..!</b> <p> Love Coding and learning</p></center>
+                        </div>                       
+                    </div>
+                    <div class='col-md-9'>
+                        <div class='card card-body' id='b'> <b>About me...</b><br> Hello visitor, I am Shubham Krishnrao Pawar. A Mecachanical engineer currently working in Filtrum Autocomp Pvt. Ltd. This page is exclusively made to showcase my django and css skills. I am a budding, aspiring proogrammer looking for an opportunity to work as pyton devloper. 
+                        <p> <h6>You can contact me at <b>pawar.shubham2597@gmail.com</b><h6></p></div>
+                        {% comment %} <a href = "www.instagram.com/shubh.01123"> <img src = "{% static 'images/insta.jpg' %}" height= "80px" > </a>    {% endcomment %}
+                        
+                    </div>             
+                </div>
+                
+            </div>
+            
+            <div class='container '>
+                <div class='row'>
+                    <div class='col-md-6'>
+                        <div class='card card-body' id='hobbies'><b>Hobbies and Interests  </b> <hr>
+                        Avid reader, perpertual leraner, sports enthusiast (Taekwondo and Basketball), NCC "A" Certicate holder, fitness freak, watching movies.
+                        Learning is my cup of tea. While surfing internet I stumbled upon Python and it intrigged me so much. It's applications and it's use has no limit. I learned the language, improving daily and experimenting new things.</div>
+                    </div>
+                    <div class='col-md-6'>
+                        <div class='card card-body' id='coding'> <b>coding basic skils </b><hr>
+                        <ul><li>Intermediate level progeammer in Python certified by Udemy </li>
+                       <li> Certified Django devloper, certified by Udemy. Also, have experince of Django by working on projects</li>
+                       <li> Good at front end languages like Html and css</li>
+                        <li>Learning MySQL database</li></ul></div>
+                    </div>
+                </div>
+            </div>
+            {% comment %} <br> {% endcomment %}
+            <div class='container '>
+                <div class='row'>
+                    <div class='col-md-6 mb-3'>
+                        <div class='card card-body' id='project'> <b>Project work </b> <ul><hr><li> Introductory page: This very page has been made with django using a pinch of css and Bootstrap. Purpose was to create an Introductory page about myself in unique way.   </li> 
+                        <li> To-do Productivity app: App is made with django. The project helps user to save tasks and track its status whether it is done or not. User restriction has created so that only registererd user can use the app. A registration form is created and serverd with Crispy forms. User can add task, edit it, edit its status and delete it. Database used is SQLlite. Additionaly, working on to add Forget password and Payment window in the app  </li><ul></div>
+                    </div>
+                    <div class='col-md-6 mb-3'>
+                        <div class='card card-body' id='work'> <b>Current working.... </b><hr>
+                        Currently working in Filtrum Autocomp Pvt. Ltd. Work is in Automobile industry as Production Supervisor (trainee). This work experince has taught me many lessons like, to be persistent in work and helped to improve my inter-personeel skills. But, my geninune interest in coding drives me to seek a new opportunity. </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+        </body>
+
+        </html>
